@@ -1,0 +1,34 @@
+============================================================
+Fault Detection in Centrifugal Pumps — Results Report
+============================================================
+
+SUPERVISED MODELS — Before vs After Hyperparameter Tuning
+------------------------------------------------------------
+  Model                              Before      After       Gain
+  ------------------------------ ---------- ---------- ----------
+  Logistic Regression                75.36%     75.33%    -0.03%
+  SVM                                75.45%     78.71% +    3.26%
+  KNN                                75.24%     77.19% +    1.95%
+
+
+BEST HYPERPARAMETERS (after tuning)
+------------------------------------------------------------
+  Logistic Regression: {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+  SVM: {'C': 1, 'gamma': 'auto', 'kernel': 'rbf'}
+  KNN: {'metric': 'euclidean', 'n_neighbors': 11}
+
+
+UNSUPERVISED MODELS
+------------------------------------------------------------
+  K-Means:
+    n_clusters: 3
+    Silhouette Score: 0.2049
+  DBSCAN:
+    eps: 0.5
+    min_samples: 10
+    Estimated clusters: 50
+    Noise points: 5425
+    Silhouette Score: -0.2712
+
+
+BEST OVERALL MODEL: SVM — 78.71%
