@@ -1,16 +1,15 @@
 # 🔧 Fault Detection & Prediction in Centrifugal Pumps
 
-> **End-to-end machine learning pipeline** to detect faults in industrial centrifugal pumps using real-time vibration sensor data — covering data cleaning, feature scaling, model training, hyperparameter tuning, and evaluation.
+> **End-to-end machine learning pipeline** to detect faults in industrial centrifugal pumps using real-time vibration sensor data covering data cleaning, feature scaling, model training, hyperparameter tuning, and evaluation.
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?logo=scikit-learn&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ---
 
 ## 📌 Problem Statement
 
-Centrifugal pumps are critical components in industrial systems. Undetected faults lead to equipment failure and costly downtime. This project builds a **binary fault classifier** — *Faulty vs Non-Faulty* — from vibration data collected across 6 sensors, enabling predictive maintenance.
+Centrifugal pumps are critical components in industrial systems. Undetected faults lead to equipment failure and costly downtime. This project builds a **binary fault classifier** "*Faulty vs Non-Faulty*" from vibration data collected across 6 sensors, enabling predictive maintenance.
 
 ---
 
@@ -19,9 +18,8 @@ Centrifugal pumps are critical components in industrial systems. Undetected faul
 | Property         | Value                              |
 |------------------|------------------------------------|
 | Total records    | 65,112                             |
-| Features         | 6 vibration sensors (Sensor1–6)    |
+| Features         | 6 vibration sensors                |
 | Target           | `1` = Faulty, `0` = Non-Faulty     |
-| Class balance    | ~50% / 50% (balanced)              |
 | Source file      | `data/Vibration_Data_New.csv`      |
 
 ---
@@ -30,19 +28,19 @@ Centrifugal pumps are critical components in industrial systems. Undetected faul
 
 ```
 📦 Fault_detection_and_prediction_in_centrifugal_pumps
-├── 📂 data/
+├── data
 │   └── Vibration_Data_New.csv       # Raw vibration sensor data
-├── 📂 models/                        # Saved trained models (.pkl)
-├── 📂 notebook/                      # Exploratory analysis notebook
-├── 📂 results/
+├── models/                          # Saved trained models (.pkl)
+├── notebook/                        # Exploratory analysis notebook
+├── results/
 │   ├── metrics_report.txt            # Before/after tuning accuracy report
 │   └── plots/                        # All saved plots (sensor, pie, confusion matrix)
-├── 📂 src/
+├── src/
 │   ├── data_preprocessing.py         # Load, clean, scale, plot
-│   ├── train.py                      # Train & tune models
-│   ├── evaluate.py                   # Metrics, confusion matrix, comparison
+│   ├── train.py                      # Train & Tune Models
+│   ├── evaluate.py                   # Metrics, Confusion Matrix, Comparison
 │   └── predict.py                    # Single & batch inference
-├── 📂 tests/
+├── tests/
 │   └── test_preprocessing.py
 ├── config.py                         # Paths, hyperparameters, constants
 ├── main.py                           # End-to-end pipeline entry point
@@ -150,3 +148,9 @@ print(result)  # 'Faulty' or 'Non-Faulty'
 | ![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white) | Numerical computing |
 | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-blue) | Visualisation |
 | ![Seaborn](https://img.shields.io/badge/-Seaborn-76b7b2) | Statistical plots |
+
+## 👤 Author
+Diksha Bidikar, Master's in Data Science Rice University
+LinkedIn: linkedin.com/in/diksha-bidikar
+Portfolio: https://diksha-bidikar.github.io/
+Email: bidikar.diksha@gmail.com
