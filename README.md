@@ -113,7 +113,7 @@ All plots are auto-saved to `results/plots/` when you run the pipeline:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/Fault_detection_and_prediction_in_centrifugal_pumps.git
+git clone https://github.com/Diksha-Bidikar/Fault_detection_and_prediction_in_centrifugal_pumps.git
 cd Fault_detection_and_prediction_in_centrifugal_pumps
 ```
 
@@ -151,6 +151,12 @@ print(result)  # 'Faulty' or 'Non-Faulty'
 
 ## 👤 Author
 Diksha Bidikar, Master's in Data Science Rice University
+
+
 LinkedIn: linkedin.com/in/diksha-bidikar
+
+
 Portfolio: https://diksha-bidikar.github.io/
+
+
 Email: bidikar.diksha@gmail.com
